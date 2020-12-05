@@ -20,4 +20,4 @@ V4_PThread:
 
 #clean temporary files 
 clean: 
-	$(RM) *.o V4_Serial V4_Cilk V4_PThread
+	$(RM) *.o V4_Serial V4_Cilk V4_PThread V4_OpenMP
