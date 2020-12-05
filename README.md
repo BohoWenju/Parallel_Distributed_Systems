@@ -1,5 +1,5 @@
 # Parallel/Distributed Systems
-Calculation of triangles in an undirected weightless graph implemented both in serial and parallel with two separate algorithms
+Calculation of triangles in an undirected weightless graph implemented both in serial and parallel with two separate algorithms(in c)
 
   Aikaterini Prokou/Eleftherios Mourelatos
 
