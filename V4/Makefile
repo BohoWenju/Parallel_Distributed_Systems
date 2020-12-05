@@ -7,6 +7,8 @@ RM = rm -f
 
 all: V4_Serial V4_Cilk V4_PThread V4_OpenMP
 
+V4_Serial:
+	$(CC) V4_Serial.c mmio.c $(CFLAGS) V4_Cilk 
 V4_Cilk: 
 	$(CC) V4_Cilk.c mmio.c $(CFLAGS) V4_Cilk $(CILKFLAG)
 
