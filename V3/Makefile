@@ -5,7 +5,7 @@ OPENMPFLAG = -fopenmp
 PTHREADFLAG = -pthread
 RM = rm -f
 
-all: V3_Serial V3_Cilk V3_OpenMP V3_PThread V4_Serial V4_Cilk V4_PThread
+all: V3_Serial V3_Cilk V3_OpenMP V3_PThread 
 
 V3_Serial:
 	$(CC) V3_Serial.c mmio.c $(CFLAGS) V3_Serial
@@ -17,9 +17,9 @@ V3_OpenMP:
 	$(CC) V3_OpenMP.c mmio.c $(CFLAGS) V3_OpenMP $(OPENMPFLAG)
 
 V3_PThread:
-	$(CC) V3_PThread.c mmio.c $(CFLAGS) V3_PThread $(PTHREADFLAG)
+	$(CC) V3_Pthread.c mmio.c $(CFLAGS) V3_PThread $(PTHREADFLAG)
 
 
 #clean temporary files
 clean:
-	$(RM) *.o V3_Serial V3_Cilk V3_OpenMP V3_PThread V4_Serial V4_Cilk V4_PThread
+	$(RM) *.o V3_Serial V3_Cilk V3_OpenMP V3_PThread 
