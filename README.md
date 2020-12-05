@@ -7,6 +7,7 @@ Calculation of triangles in an undirected weightless graph implemented both in s
   Calculates the number of triangles in a
   given undirected graph.The graphs were
   taken from Matrix market:
+  
   (See :https://math.nist.gov/MatrixMarket/)
   and have been formatted according to the CSC Format
   
