@@ -1,0 +1,36 @@
+CC = gcc
+CFLAGS = -o
+CILKFLAG = -fcilkplus
+OPENMPFLAG = -fopenmp
+PTHREADFLAG = -pthread
+RM = rm -f
+
+all: V3_Serial V3_Cilk V3_OpenMP V3_PThread V4_Serial V4_Cilk V4_PThread
+
+V3_Serial: 
+	$(CC) V3_Serial.c mmio.c $(CFLAGS) V3_Serial
+
+V3_Cilk: 
+	$(CC) V3_Cilk.c mmio.c $(CFLAGS) V3_Cilk $(CILKFLAG)
+
+V3_OpenMP: 
+	$(CC) V3_OpenMP.c mmio.c $(CFLAGS) V3_OpenMP $(OPENMPFLAG)
+
+V3_PThread: 
+	$(CC) V3_PThread.c mmio.c $(CFLAGS) V3_PThread $(PTHREADFLAG)
+
+V4_Serial: 
+	$(CC) V4_Serial.c mmio.c $(CFLAGS) V4_Serial
+
+V4_Cilk: 
+	$(CC) V4_Cilk.c mmio.c $(CFLAGS) V4_Cilk $(CILKFLAG)
+
+V4_OpenMP: 
+	$(CC) V4_OpenMP.c mmio.c $(CFLAGS) V4_OpenMP $(OPENMPFLAG)
+
+V4_PThread: 
+	$(CC) V4_PThread.c mmio.c $(CFLAGS) V4_PThread $(PTHREADFLAG)
+
+#clean temporary files 
+clean: 
+	$(RM) *.o V3_Serial V3_Cilk V3_OpenMP V3_PThread V4_Serial V4_Cilk V4_PThread
