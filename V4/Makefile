@@ -16,7 +16,7 @@ V4_OpenMP:
 	$(CC) V4_OpenMP.c mmio.c $(CFLAGS) V4_OpenMP $(OPENMPFLAG)
 
 V4_PThread: 
-	$(CC) V4_PThread.c mmio.c $(CFLAGS) V4_PThread $(PTHREADFLAG)
+	$(CC) V4_Pthread.c mmio.c $(CFLAGS) V4_PThread $(PTHREADFLAG)
 
 #clean temporary files 
 clean: 
