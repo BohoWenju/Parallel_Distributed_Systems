@@ -10,7 +10,7 @@ The main part of this exercise was to calculate the difference in time between t
   given undirected graph.The graphs were
   taken from Matrix market:
   
-  (See :https://math.nist.gov/MatrixMarket/) and have been formatted according to the CSC Format
+  (See :https://math.nist.gov/MatrixMarket/) and have been formatted according to the CSC Format.
   
   V3 : indicates a simple algorithm to calculate the number of triangles in an undirected weightless graph.
   
