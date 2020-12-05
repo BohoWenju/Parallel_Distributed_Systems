@@ -14,9 +14,8 @@ Calculation of triangles in an undirected weightless graph implemented both in s
   
   V3 : indicates a simple algorithm to calculate the number of triangles in an undirected weightless graph
   
-  V4 : indicates a more complex algorithm to calculate the number of triangles
-  in an undirected weightless graph
-  based on the formula C=(A.*(A*A))*e/2 where : C is a vector with the number of triangles each node is connected to ,
+  V4 : indicates a more complex algorithm to calculate the number of triangles in an undirected weightless graph
+  based on the formula      C=(A.*(A*A))*e/2 where : C is a vector with the number of triangles each node is connected to ,
   A is the matrix as taken from matrix market and e is a vector filled with 1's.Number of triangles is then
   the sum of vector C divided by 3.
 
