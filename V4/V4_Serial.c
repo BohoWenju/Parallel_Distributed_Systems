@@ -1,7 +1,7 @@
 /*
      PARALLEL AND DISTRIBUTED SYSTEMS
 
-  Main Code for V3 part of the exercise
+  Main Code for V4 part of the exercise
   Aikaterini Prokou/Eleftherios Mourelatos
 
 
